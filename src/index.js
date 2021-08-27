@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
-import ComponentePrueba from './ComponentePrueba';
+import Contenedor from './Contenedor';
 
-ReactDOM.render(
-  <Header />,
-  document.getElementById('header')
+ReactDOM.render( 
+    <Header /> ,
+    document.getElementById('header')
 );
 
-ReactDOM.render(
-  <ComponentePrueba   genero="F"/>,
-  document.getElementById('root')
+ReactDOM.render( 
+    <Contenedor/>,
+    document.getElementById('root')
 );
 
 
