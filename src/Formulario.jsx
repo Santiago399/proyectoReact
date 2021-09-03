@@ -10,6 +10,9 @@ class Formulario extends Component{
         }
 
         this.cambiarNombre = this.cambiarNombre.bind(this);
+
+        let elemento = document.getElementById("contenedor");
+        console.log(elemento);
     }
 
     cambiarNombre(e){
@@ -20,7 +23,7 @@ class Formulario extends Component{
 
     render(){
         return(
-            <div>
+            <div id="contenedor">
                 <h1>
                     <form action="">
                         <label htmlFor="">Nombre</label><br/>
@@ -35,6 +38,16 @@ class Formulario extends Component{
         )
     }
 
+    componentDidMount(){
+        let elemento = document.getElementById("contenedor");
+        console.log(elemento);
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        console.log(prevProps);
+        console.log(prevState);
+        console.log("----------------");
+    }
 }
 
 export default Formulario;
