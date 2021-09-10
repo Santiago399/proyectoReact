@@ -2,11 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './App';
+import Contenedor from './Contenedor';
+import Header from './Header';
+import Footer from './Footer';
+
 
 ReactDOM.render( 
-    <App/> ,
+    <Header/> ,
     document.getElementById('header')
+);
+
+ReactDOM.render( 
+    <Contenedor/> ,
+    document.getElementById('contenedor')
+);
+ReactDOM.render( 
+    <Footer/> ,
+    document.getElementById('footer')
 );
 
 
